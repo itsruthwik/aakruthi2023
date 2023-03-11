@@ -20,3 +20,68 @@ scroll.reveal('.info', { distance: '50px', origin: 'right', scale: 0.9 });
 scroll.reveal('.faq-content h2', { distance: '50px', origin: 'right', scale: 0.9 });
 scroll.reveal('.journey-image', { distance: '50px', scale: 0.9 });
 scroll.reveal('.wrap-sponsers h2', { distance: '50px', origin: 'left', scale: 0.9 });
+
+
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+
+function changeBg()
+{
+    var navbar = document.getElementById("hi");
+    var scrollvalue = window.scrollY;
+
+    if(scrollvalue <80)
+    {
+        navbar.style.backgroundColor = "transparent";
+
+    }
+    else{
+        navbar.style.backgroundColor = "white";
+    }
+}
+
+
+window.addEventListener('scroll',changeBg);
+
+
+const togglebtn = document.getElementById('checkbox');
+const dd = document.getElementById('amma');
+
+togglebtn.onclick = () =>
+{
+    if(dd.style.display == 'none')
+    {
+        dd.style.display = 'block';
+    }
+    else{
+        dd.style.display = 'none';
+    }
+}
+
+function ch ()
+{
+    if(dd.style.display == 'none')
+    {
+        dd.style.display = 'flex';
+    }
+    else{
+        dd.style.display = 'none';
+    }
+}
