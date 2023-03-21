@@ -720,6 +720,16 @@ ff3c5f */
     width: 200px;
 }
 
+.section-events .events-container .event-card .event-card-box .event-moredetails
+{
+    text-align: center;
+}
+
+.section-events .events-container .event-card .event-card-box .event-moredetails a
+{
+    color: #e8fff1;;
+}
+
 .section-events .events-container .event-card .event-card-box .event-button button
 {
     font-weight: 600;
