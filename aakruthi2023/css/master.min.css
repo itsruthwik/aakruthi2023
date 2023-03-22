@@ -1551,7 +1551,7 @@ ff3c5f */
 
 @media screen and (max-width: 400px) {
     .section-one .info-container {
-        margin-top: 3%;
+        margin-top: -25%;
         padding-top: 10px;
         margin-left: 0px
     }
